@@ -1,0 +1,173 @@
+Test Case ID: TC_IP_001
+Title: Verify Successful Policy Purchase
+
+Preconditions:
+- User is logged in with an active account.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select a policy type.
+3. Enter valid customer details.
+4. Pay the premium amount.
+5. Confirm the purchase.
+
+Expected Result:
+- The policy is successfully purchased.
+- A purchase confirmation message is displayed.
+
+
+Test Case ID: TC_IP_002
+Title: Verify Policy Purchase with Invalid Customer Details
+
+Preconditions:
+- User is logged in with an active account.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select a policy type.
+3. Enter invalid customer details.
+4. Pay the premium amount.
+5. Confirm the purchase.
+
+Expected Result:
+- An error message is displayed indicating invalid customer details.
+
+
+Test Case ID: TC_IP_003
+Title: Verify Policy Purchase with Insufficient Premium Payment
+
+Preconditions:
+- User is logged in with an active account.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select a policy type.
+3. Enter valid customer details.
+4. Make an insufficient premium payment.
+5. Confirm the purchase.
+
+Expected Result:
+- An error message is displayed indicating insufficient premium payment.
+
+
+Test Case ID: TC_IP_004
+Title: Verify Policy Purchase with OTP Authentication
+
+Preconditions:
+- User is logged in with an active account.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select a policy type.
+3. Enter valid customer details.
+4. Receive the OTP.
+5. Enter the OTP.
+6. Pay the premium amount.
+7. Confirm the purchase.
+
+Expected Result:
+- The policy is successfully purchased.
+- A purchase confirmation message is displayed.
+
+
+Test Case ID: TC_IP_005
+Title: Verify Policy Purchase When Daily Limit is Exceeded
+
+Preconditions:
+- User has exceeded the daily transaction limit.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select a policy type.
+3. Enter valid customer details.
+4. Pay the premium amount.
+5. Confirm the purchase.
+
+Expected Result:
+- An error message is displayed indicating that the daily limit has been exceeded.
+
+
+Test Case ID: TC_IP_006
+Title: Verify Policy Purchase with Invalid Policy Type
+
+Preconditions:
+- User is logged in with an active account.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select an invalid policy type.
+3. Enter valid customer details.
+4. Pay the premium amount.
+5. Confirm the purchase.
+
+Expected Result:
+- An error message is displayed indicating an invalid policy type.
+
+
+Test Case ID: TC_IP_007
+Title: Verify Policy Purchase with Failed Payment
+
+Preconditions:
+- User is logged in with an active account.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select a policy type.
+3. Enter valid customer details.
+4. Attempt premium payment that fails.
+5. Confirm the purchase.
+
+Expected Result:
+- An error message is displayed indicating payment failure.
+
+
+Test Case ID: TC_IP_008
+Title: Verify Policy Purchase with Duplicate Policy
+
+Preconditions:
+- User already has an existing policy of the same type.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select a policy type.
+3. Enter customer details.
+4. Pay the premium amount.
+5. Confirm the purchase.
+
+Expected Result:
+- An error message is displayed indicating a duplicate policy already exists.
+
+
+Test Case ID: TC_IP_009
+Title: Verify Policy Purchase with Invalid Premium Payment Method
+
+Preconditions:
+- User is logged in with an active account.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select a policy type.
+3. Enter valid customer details.
+4. Attempt payment using an invalid payment method.
+5. Confirm the purchase.
+
+Expected Result:
+- An error message is displayed indicating an invalid premium payment method.
+
+
+Test Case ID: TC_IP_010
+Title: Verify Policy Purchase During System Failure
+
+Preconditions:
+- The system is experiencing a failure or service disruption.
+
+Test Steps:
+1. Navigate to the Policy Purchase page.
+2. Select a policy type.
+3. Enter valid customer details.
+4. Pay the premium amount.
+5. Confirm the purchase.
+
+Expected Result:
+- An error message is displayed indicating a system failure.
+- The policy purchase is not completed.
