@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Chat Button</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .custom-chat-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            z-index: 10000;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .custom-chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+            }
+            50% {
+                box-shadow: 0 6px 20px rgba(102, 126, 234, 0.7);
+            }
+        }
+
+        .test-info {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+
+        .test-info h1 {
+            color: #1e3c72;
+            margin-bottom: 20px;
+        }
+
+        .test-info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #28a745;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Custom Chat Button -->
+    <button id="customChatButton" class="custom-chat-button" onclick="testClick()" title="Test Chat Button">
+        💬
+    </button>
+
+    <div class="test-info">
+        <h1>🧪 Chat Button Test</h1>
+        <p><strong>Look at the top-right corner of this page.</strong></p>
+        <p>You should see a blue circular button with a 💬 emoji.</p>
+        <p>The button should:</p>
+        <ul>
+            <li>Be visible immediately</li>
+            <li>Have a pulsing animation</li>
+            <li>Scale up when you hover over it</li>
+            <li>Show a tooltip "Test Chat Button"</li>
+            <li>Show an alert when clicked</li>
+        </ul>
+        
+        <div id="result" style="margin-top: 20px;"></div>
+    </div>
+
+    <script>
+        function testClick() {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = '<div class="success">✅ <strong>SUCCESS!</strong> The chat button is working correctly! Click count: ' + (window.clickCount || 0) + '</div>';
+            window.clickCount = (window.clickCount || 0) + 1;
+            
+            console.log('Chat button clicked!', {
+                buttonExists: !!document.getElementById('customChatButton'),
+                buttonVisible: window.getComputedStyle(document.getElementById('customChatButton')).display !== 'none',
+                buttonPosition: document.getElementById('customChatButton').getBoundingClientRect()
+            });
+        }
+
+        // Log button status on load
+        window.addEventListener('load', function() {
+            const button = document.getElementById('customChatButton');
+            const styles = window.getComputedStyle(button);
+            
+            console.log('🔍 Button Status:', {
+                exists: !!button,
+                display: styles.display,
+                position: styles.position,
+                top: styles.top,
+                right: styles.right,
+                zIndex: styles.zIndex,
+                visibility: styles.visibility,
+                opacity: styles.opacity,
+                dimensions: button.getBoundingClientRect()
+            });
+        });
+    </script>
+</body>
+</html>
