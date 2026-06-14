@@ -1,0 +1,602 @@
+[
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7b3",
+      "module": "Registration",
+      "testCaseId": "TC_014",
+      "preRequisites": "Event ID",
+      "title": "Event Registration",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Select Type of Registration as “Event” and Registration type as UHID.\n5. Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.\n6. Select payment mode from payment details and complete the registration           ",
+      "expectedResults": "UHID should get generate for Event Registration",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V16",
+      "type": "Function ",
+      "text": "Verify To generate UHID with Event Registration"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7b2",
+      "module": "Registration",
+      "testCaseId": "TC_013",
+      "preRequisites": null,
+      "title": "Quick Registration",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Functions->Registration->Quick Registration\n5.Select Registration type as UHID.\n6.Select Type of registration as “Normal”.\n7.Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.\n",
+      "expectedResults": "UHID should get generate for Quick Registration",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V2",
+      "type": "Function ",
+      "text": "Verify To generate UHID with Quick Registration"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7b4",
+      "module": "Registration",
+      "testCaseId": "TC_015",
+      "preRequisites": "Campaign name",
+      "title": "Campaign Registration",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Select Type of Registration as “Campaign \"and Registration type as UHID. \n5.Select the Campaign name from drop down.\n6. Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.\n7.Select payment mode from payment details  and Click on Submit button    ",
+      "expectedResults": "UHID should get generate for Campaign Registration",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V9",
+      "type": "Function ",
+      "text": "Verify To generate UHID with Campaign Registration"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7b7",
+      "module": "Registration",
+      "testCaseId": "TC_018",
+      "preRequisites": null,
+      "title": "UHID with Card Payment",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Select Type of registration as “Normal”                                                               5.Check Yes for International patients and enter the mandatory  fields.\n6.Enter  the  Mandatory Details which are having asterisk(*) symbol and click on the “Register” button.\n7.Check the transaction billable check box and check the “Card”  payment mode in Payment details. (By default the transaction check box is checked) provide the required details and do payment.",
+      "expectedResults": "UHID should get generate with card Payment",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V4",
+      "type": "Function ",
+      "text": "Verify To generate UHID with Card Payment"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7d1",
+      "module": "Registration",
+      "testCaseId": "TC_044",
+      "preRequisites": null,
+      "title": "Create UHID without Payment Scenarios",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select on Registration from drop-down.\n4.Click Functions->Registration \n5.Provide the details and click on register button \n6.Make a Note of that UHID \n7.Close the payment window\n8.Search that UHID in patient search\n9.Check the Status of UHID",
+      "expectedResults": null,
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Prabakaran",
+      "risk": "High",
+      "version": "V14",
+      "type": "Function ",
+      "text": "Verify if UHID Automatically Deactivated or not when User created UHID without Payment, by Closing Payment screen, "
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7c0",
+      "module": "Registration",
+      "testCaseId": "TC_027",
+      "preRequisites": "Master UHID and Child UHID",
+      "title": "Merge UHID",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Functions->Transaction-->Merge/Demerge.\n5.Enter Master UHID and Click on Go option.\n6.Enter Child UHID and Click on Go option.\n7.Click on Merge UHID",
+      "expectedResults": "Selected UHID Merged Successfully with Master UHID Message should be displayed",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V3",
+      "type": "Function ",
+      "text": "Verify user able to Merge Master UHID and Child UHID."
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7c1",
+      "module": "Registration",
+      "testCaseId": "TC_028",
+      "preRequisites": "Master UHID",
+      "title": "Demerge UHID",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Functions->Transaction-->Merge/Demerge.\n5.Enter Master UHID and Click on Go option.\n6. Click on Demerge Consent and Click on Demerge UHID",
+      "expectedResults": "Selected UHID Demerged Successfully From Master UHID Message should be displayed",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V10",
+      "type": "Function ",
+      "text": "Verify user able to Demerge Master UHID and Child UHID."
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7b6",
+      "module": "Registration",
+      "testCaseId": "TC_017",
+      "preRequisites": null,
+      "title": "UHID with Cash Payment",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Select Type of registration as “Normal”                                                               5.Check Yes for International patients and enter the mandatory  fields.\n6.Enter  the  Mandatory Details which are having asterisk(*) symbol and click on the “Register” button.\n7.Check the transaction billable check box and check the “Cash”  payment mode in Payment details. (By default the transaction check box is checked).\n8. Select the Currency and give currency amount in Cash details(Total cash amount should be equivalent to the billable amount)",
+      "expectedResults": "UHID should get generate with cash Payment",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V12",
+      "type": "Function ",
+      "text": "Verify To generate UHID with Cash Payment"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7d0",
+      "module": "Registration",
+      "testCaseId": "TC_043",
+      "preRequisites": "Region specific UHID",
+      "title": "Enterprise Search UHID its Functionality",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select on Registration from drop-down.\n4.Click on patient search and choose search Type as enterprise Radio button\n5.Enter the input values Uhid/First name ,Last name & gender and click on search",
+      "expectedResults": "Region Specific UHID Details should be displayed",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Prabakaran",
+      "risk": "High",
+      "version": "V17",
+      "type": "Function ",
+      "text": "Verify user able to search Region specific UHID"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e903c4f16dec46a61d92b",
+      "module": "Emergency",
+      "testCaseId": "TC_390",
+      "preRequisites": null,
+      "title": "Transactions - Dashboard - Dashboard tab  - Existing UHID",
+      "steps": "1.Launch the Application.\n2.Login to the application with valid credentials\n3.Click on Patient Service Tab and select Emergency from the drop down.\n4.Navigate to Functions ->Transactions - Dashboard  \n5.Click on  existing UHID link and enter existing UHID and click on search button.\n6.Click on  set Emergency Flag on the right corner.",
+      "expectedResults": "User should get a success message of emergency Patient Conversation.",
+      "automationManual": "Automation",
+      "priority": "P3",
+      "createdBy": "Sumitha",
+      "risk": "Medium",
+      "version": "V1",
+      "type": "Function ",
+      "text": "Verify User is able to change existing UHID to emergency Patient"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7c2",
+      "module": "Registration",
+      "testCaseId": "TC_029",
+      "preRequisites": "Valid UHID",
+      "title": "Reissue UHID",
+      "steps": "1 Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Go to patient search screen, Enter input values like UHID/First name and last name & gender and Click on Search Button.\n5. Right click on UHID and select “Reissue UHID” option.\n6.Click on Reissue UHID card option.\n7.Enter payment details and click on add button and then click on submit button.",
+      "expectedResults": null,
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V7",
+      "type": "Function ",
+      "text": "Verify User able to Reissue UHID Card"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7ba",
+      "module": "Registration",
+      "testCaseId": "TC_021",
+      "preRequisites": null,
+      "title": "Update Insurance details",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Click on Patient search link and enter valid input values UHID/First name and last name & gender and click on search\n5.Select UHID and right click on \"update insurance\" details\n6.Make the required changes\n7.Click on save",
+      "expectedResults": "Insurance details should get update for the selected UHID",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V15",
+      "type": "Function ",
+      "text": "Verify updating insurance details to UHID"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7c3",
+      "module": "Registration",
+      "testCaseId": "TC_030",
+      "preRequisites": "Valid UHID",
+      "title": "Reprint UHID Card",
+      "steps": "1 Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Go to patient search screen, Enter input values like UHID/First name and last name & gender and Click on Search Button.\n5.Check for the availability of Reprint UHID icon in the last column of the grid against UHID. \n6.Click on Reprint UHID icon against any UHID.\n7.Click on the Print icon.      ",
+      "expectedResults": "The UHID Card Should be Reprint Successfully without payment",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V2",
+      "type": "Function ",
+      "text": "Verify User able to Reprint UHID without Payment."
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7d5",
+      "module": "Registration",
+      "testCaseId": "TC_048",
+      "preRequisites": "Valid From and to Date",
+      "title": "OLD to New UHID conversion",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Navigate to Functions->Reports->OLD to New UHID\n5.Provide the input details like From and To Date and click on report and observe the report\n6.Click on Export to Excel button (if required)",
+      "expectedResults": "OLD to New UHID conversion report should get generate",
+      "automationManual": "Manual",
+      "priority": "P4",
+      "createdBy": "Sumitha",
+      "risk": "Low",
+      "version": "V7",
+      "type": "Non Function ",
+      "text": "Verify OLD to New UHID report"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7cb",
+      "module": "Registration",
+      "testCaseId": "TC_038",
+      "preRequisites": null,
+      "title": "Demographics Master-->Habits",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select on Registration from drop-down.\n4.Functions->Registration->Demographic Masters->Demographic masters and click on Habits\n5.Fill the details and click on save\n6. Navigate to Functions -> Registration -> Registration.\n7.Verify the created Demographic Detail is reflecting under the corresponding field in registration screen.",
+      "expectedResults": "The Demographic Values for Habits should be created successfully and should reflect in Registration screen.",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Prabakaran",
+      "risk": "Critical",
+      "version": "V9",
+      "type": "Function ",
+      "text": "Verify user able to Create a new Demographic values for Habits and validate if it is reflecting in Registration Screen"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7ce",
+      "module": "Registration",
+      "testCaseId": "TC_041",
+      "preRequisites": null,
+      "title": "Demographics Master-->Patient Type",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select on Registration from drop-down.\n4.Functions->Registration->Demographic Masters->Demographic masters and click on Patient Type\n5.Fill the details and click on save\n6. Navigate to Functions -> Registration -> Registration.\n7. Verify the created Demographic Detail is reflecting under the corresponding field in registration screen.",
+      "expectedResults": "The Demographic Values for Patient Type should be created successfully and should reflect in Registration screen.",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Prabakaran",
+      "risk": "Critical",
+      "version": "V12",
+      "type": "Function ",
+      "text": "Verify user able to Create a new Demographic values for Patient Type and validate if it is reflecting in Registration Screen"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7c9",
+      "module": "Registration",
+      "testCaseId": "TC_036",
+      "preRequisites": null,
+      "title": "Demographics Master-->Visa Type",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select on Registration from drop-down.\n4.Functions->Registration->Demographic Masters->Demographicmasters and click on Visa Type\n5.Fill the details and click on save\n6. Navigate to Functions -> Registration -> Registration.\n7.Verify the created Demographic Detail is reflecting under the corresponding field in registration screen.",
+      "expectedResults": "The Demographic Values for Visa Type should be created successfully and should reflect in Registration screen.",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Prabakaran",
+      "risk": "Critical",
+      "version": "V1",
+      "type": "Function ",
+      "text": "Verify user able to Create a new Demographic values for Visa Type and validate if it is reflecting in Registration Screen"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7d4",
+      "module": "Registration",
+      "testCaseId": "TC_047",
+      "preRequisites": "Valid From and to Date",
+      "title": "Converted to UHID",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Navigate to Functions->Reports->Converted to UHID\n5.Provide the input details like From and To Date and click on report and observe the report\n6.Click on Export to Excel button (if required)",
+      "expectedResults": "Record-Converted to UHID report should get generate",
+      "automationManual": "Manual",
+      "priority": "P4",
+      "createdBy": "Sumitha",
+      "risk": "Low",
+      "version": "V14",
+      "type": "Non Function ",
+      "text": "Verify Converted to UHID report"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7c8",
+      "module": "Registration",
+      "testCaseId": "TC_035",
+      "preRequisites": null,
+      "title": "Demographics Master-->Suffix",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select on Registration from drop-down.\n4.Functions->Registration->Demographic Masters->Demographic masters and click on Suffix\n5.Fill the details and click on save\n6. Navigate to Functions -> Registration -> Registration.\n7. Verify the created Demographic Detail is reflecting under the corresponding field in registration screen.",
+      "expectedResults": "The Demographic Values for Suffix should be created successfully and should reflect in Registration screen.",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Prabakaran",
+      "risk": "Critical",
+      "version": "V16",
+      "type": "Function ",
+      "text": "Verify user able to Create a new Demographic values for Suffix and validate if it is reflecting in Registration Screen"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7ab",
+      "module": "Registration",
+      "testCaseId": "TC_006",
+      "preRequisites": "Valid old UHID",
+      "title": "OLD to New UHID conversion",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Select Already have UHID in legacy data as \"Yes\".\n5.Enter  the  Mandatory Details which are having asterisk(*)symbol and click on the “Register” button.\n6.Enter Payment details by selecting payment mode as CARD/CASH etc\n7.Click on submit button",
+      "expectedResults": "Should get convert successfully from OLD to New UHID",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V12",
+      "type": "Function ",
+      "text": "Verify OLD to New UHID conversion"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7cc",
+      "module": "Registration",
+      "testCaseId": "TC_039",
+      "preRequisites": null,
+      "title": "Demographics Master-->Religion",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select on Registration from drop-down.\n4.Functions->Registration->Demographic Masters->Demographic masters and click on Religion\n5.Fill the details and click on save\n6. Navigate to Functions -> Registration -> Registration.\n7. Verify the created Demographic Detail is reflecting under the corresponding field in registration screen.",
+      "expectedResults": "The Demographic Values for Religion should be created successfully and should reflect in Registration screen.",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Prabakaran",
+      "risk": "Critical",
+      "version": "V3",
+      "type": "Function ",
+      "text": "Verify user able to Create a new Demographic values for Religion and validate if it is reflecting in Registration Screen"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7aa",
+      "module": "Registration",
+      "testCaseId": "TC_005",
+      "preRequisites": "PRN/ERN Number",
+      "title": "Conversion from PRN/ERN Reg to UHID",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Registration from the drop down.\n4.Click on patient search link\n5.Enter input values like PRN/ERN and click on search button\n6.Right click on PRN/ERN and click on convert to UHID link \n7.Enter mandatory Details which are having asterisk(*)symbol and click on convert to UHID button\n8.Enter Payment details by selecting payment mode as CARD/CASH etc\n9.Click on submit button",
+      "expectedResults": "Should get convert successfully from PRN/ERN Reg to UHID",
+      "automationManual": "Automation",
+      "priority": "P2",
+      "createdBy": "Sumitha",
+      "risk": "High",
+      "version": "V4",
+      "type": "Function ",
+      "text": "Verify Conversion from PRN/ERN Reg to UHID"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7ca",
+      "module": "Registration",
+      "testCaseId": "TC_037",
+      "preRequisites": null,
+      "title": "Demographics Master-->Donor",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select on Registration from drop-down.\n4.Functions->Registration->Demographic Masters->Demographic masters and click on Donor\n5.Fill the details and click on save\n6. Navigate to Functions -> Registration -> Registration.\n7.Verify the created Demographic Detail is reflecting under the corresponding field in registration screen.",
+      "expectedResults": "The Demographic Values for Donor should be created successfully and should reflect in Registration screen.",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Prabakaran",
+      "risk": "Critical",
+      "version": "V14",
+      "type": "Function ",
+      "text": "Verify user able to Create a new Demographic values for Donor and validate if it is reflecting in Registration Screen"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7c7",
+      "module": "Registration",
+      "testCaseId": "TC_034",
+      "preRequisites": null,
+      "title": "Demographics Master-->Title master",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select on Registration from drop-down.\n4.Functions->Registration->Demographic Masters->Demographic masters and click on Title Master\n5.Fill the details and click on save\n6. Navigate to Functions -> Registration -> Registration.\n7. Verify the created Demographic Detail is reflecting under the corresponding field in registration screen.",
+      "expectedResults": "The Demographic Values for Title master should be created successfully and should reflect in Registration screen.",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Prabakaran",
+      "risk": "Critical",
+      "version": "V13",
+      "type": "Function ",
+      "text": "Verify user able to Create a new Demographic values for Title master and validate if it is reflecting in Registration Screen"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e903c4f16dec46a61d91f",
+      "module": "Emergency",
+      "testCaseId": "TC_378",
+      "preRequisites": null,
+      "title": "Transactions - Dashboard - Dashboard tab  -  Search Patient",
+      "steps": "1.Launch the Application.\n2.Login to the application with valid credentials\n3.Click on Patient Service Tab and select Emergency from the drop down.\n4.Navigate to Functions ->Transactions - Dashboard  \n5.Click on patient search drop down and enter the details and click on Go.",
+      "expectedResults": "\nUser should be able to view Patient Details by Patient Search",
+      "automationManual": "Automation",
+      "priority": "P3",
+      "createdBy": "Sumitha",
+      "risk": "Medium",
+      "version": "V4",
+      "type": "Function ",
+      "text": "Verify user is able to view Patient details by search Patient"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90364f16dec46a61d7da",
+      "module": "Admin",
+      "testCaseId": "TC_053",
+      "preRequisites": null,
+      "title": " AHC -> Adding Role ",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on External Service Tab and select Admin from the drop down.\n4.Click on Navigation Menu -> Masters ->Roles -> AHC.\n5.Right click  on AHC and select \"Add Role\".\n6.Enter  the Role Name and click on the “Add” button.",
+      "expectedResults": "Role should be add to AHC",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Sankar",
+      "risk": "Critical",
+      "version": "V18",
+      "type": "Function ",
+      "text": "To verify the user able to Add the role to AHC."
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e903b4f16dec46a61d86f",
+      "module": "BB(Blood Bank)",
+      "testCaseId": "TC_202",
+      "preRequisites": " ",
+      "title": "Master - > Blood Type - > Save",
+      "steps": "1.Launch the application\n2.Login to the application with  valid credentials\n3.Click on patient service tab and select BB from dropdown\n4.Navigate to Functions - > Masters - > Blood type\n5.Enter  mandatory details which are having asterisk(*) symbol.\n6.Click on \"SAVE \" button",
+      "expectedResults": "User Should Able To Save The Blood Type Details",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Sudarshan",
+      "risk": "Critical",
+      "version": "V11",
+      "type": "Function ",
+      "text": " Verify user is able to Save The Blood Type Details"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e90394f16dec46a61d868",
+      "module": "AT(Admission Module)",
+      "testCaseId": "TC_195",
+      "preRequisites": "Valid IP Number",
+      "title": "Transfer - Category/Bed ",
+      "steps": "1. Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select AT from the drop down\n4.Click on Function->Transfer->Category/Bed\n5.Enter Valid IP Number and click Search\n6.Select Particular Record and right Click on UHID and click on Transfer Link.\n7.Select the Occupy Old as Occupy Old.\n8.Click on Occupy Old button.\n9.Select Transfer Information as Transfer Type, Billable Tarrif, Reason for Transfer, Requestor Category and Type of Patient.\n10. Click on Transfer Request button.",
+      "expectedResults": "User should be able to create a Transfer request with Dual Bed Occupancy",
+      "automationManual": "Automation ",
+      "priority": "P3",
+      "createdBy": "Prabakaran",
+      "risk": "Medium",
+      "version": "V13",
+      "type": "Function ",
+      "text": "To Verify User is able to Raise Transfer Request with \nBed Occupancy - Dual"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e903b4f16dec46a61d872",
+      "module": "BB(Blood Bank)",
+      "testCaseId": "TC_205",
+      "preRequisites": " ",
+      "title": "Master - > Blood Type - > Delete",
+      "steps": "1.Launch the application\n2.Login to the application with  valid credentials\n3.Click on patient service tab and select BB from dropdown\n4.Navigate to Functions - > Masters - > Blood type\n5.Enter  Blood Type Code\n6.Click on  \" View  \" button  and ,  Click on Delete icon\n7.Click ok on the popup message displayed",
+      "expectedResults": "Record   Successfully  Deleted Message Should Be Displayed",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Sudarshan",
+      "risk": "Critical",
+      "version": "V18",
+      "type": "Function ",
+      "text": " Verify user is able to Delete  The Blood Type Details"
+    },
+    "default_value": ""
+  },
+  {
+    "text_key": "text",
+    "data": {
+      "_id": "6a2e903c4f16dec46a61d8ea",
+      "module": "Dynamic Forms",
+      "testCaseId": "TC_325",
+      "preRequisites": "Group Name\nSub Group Name",
+      "title": "Map Assessment  Screens to Group/Subgroup - Save",
+      "steps": "1.Launch the application\n2.Login to the application with valid credentials.\n3.Click on Patient Service Tab and select Dynamic Forms from the drop down.\n4.Go to Function -> Masters -> Group\n5.Select Map Assessment  Screens to Group/Subgroup tab\n6.Select Particular assesment screen along with Group and Subgroup and click on add button.\n7.Click on Save button",
+      "expectedResults": "User should be able to add mapping between assesment type and group details",
+      "automationManual": "Manual",
+      "priority": "P1",
+      "createdBy": "Sankar",
+      "risk": "Critical",
+      "version": "V1",
+      "type": "Function ",
+      "text": "Verify User is able to add Group/Subgroup with particular Assessment Screen"
+    },
+    "default_value": ""
+  }
+]
